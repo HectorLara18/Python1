@@ -23,7 +23,14 @@ def valorIncremental(valor):
         resultado = FizzBuzz(i)
         print("Valor Actual: " + str(valorActual) + " Resultado: " + str(resultado))
 
+def valorIncremetalFor(valor):
+    for x in range(valor):
+        valorActual = str(x)
+        resultado = str(FizzBuzz(x))
+        print("Valor Actual: " + str(valorActual) + " Resultado: " + str(resultado))
+
+
 
 entrada = int(input("Ingrese valor: "))
 
-valorIncremental(entrada)
+valorIncremetalFor(entrada)
